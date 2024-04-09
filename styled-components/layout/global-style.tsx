@@ -21,8 +21,8 @@ export default createGlobalStyle<{ theme: Theme }>`
 
   body {
     margin: 0;
-    background-color: var(--c-bg-main);
-    color: var(--c-text-main);
+    background-color: ${(props) => props.theme.colors.primaryDefault};
+    color: ${(props) => props.theme.colors.primaryLight};
     font-family: ${(props) => props.theme.font.family.main};
     line-height: ${(props) => props.theme.font.lineHeight.main};
     -webkit-font-smoothing: antialiased;

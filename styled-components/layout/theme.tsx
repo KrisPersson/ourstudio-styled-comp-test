@@ -7,6 +7,12 @@ export const theme = {
     Lg: "@media (min-width: 1200px)",
     LtLg: "@media (max-width: 1199px)",
   },
+  colors: {
+    primaryDark: "rgba(0, 0, 0, 1)",
+    primaryDefault: "rgba(24, 24, 24, 1)",
+    primaryLight: "rgba(255, 255, 255, 1)",
+    secondaryDefault: "rgba(254, 238, 190, 1)",
+  },
   font: {
     family: {
       main: "DM Sans, sans-serif",
@@ -33,8 +39,30 @@ export const theme = {
   },
   size: {
     baseUnit: "8px",
-    containerMaxWidth: "1496px",
+    containerMaxWidth: "1560px",
     contentMaxWidth: "560px",
+  },
+  spacing: {
+    gutter: {
+      container: {
+        inline: {
+          mobile: "32px",
+          desktop: "40px",
+        },
+        block: {
+          mobile: "28px",
+          desktop: "40px",
+        },
+      },
+    },
+    padding: {
+      page: {
+        top: {
+          mobile: "28px",
+          desktop: "40px",
+        },
+      },
+    },
   },
 };
 

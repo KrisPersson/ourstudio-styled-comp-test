@@ -5,9 +5,7 @@ const Footer = () => {
   return (
     <Wrapper aria-label="Page footer">
       <Container>
-        <Inner>
-          <p>Tjena Footer</p>
-        </Inner>
+        <Inner></Inner>
       </Container>
     </Wrapper>
   );
