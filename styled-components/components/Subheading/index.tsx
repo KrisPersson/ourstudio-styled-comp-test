@@ -7,9 +7,11 @@ export const Subheading = styled.p`
   line-height: 1.75rem;
   color: ${(props) => props.theme.colors.secondaryDefault};
   margin: 0;
+  max-width: ${size(36)};
 
   ${(props) => props.theme.breakpoint.Md} {
     font-size: 2rem;
     line-height: 3rem;
+    max-width: ${size(70)};
   }
 `;
