@@ -15,7 +15,7 @@ const SectionHeader = ({
   children,
   subheading,
 }: SectionHeaderProps) => (
-  <Wrapper>
+  <Wrapper as="header">
     {tagline && <Tagline>{tagline}</Tagline>}
     {children}
     {subheading && <Subheading>{subheading}</Subheading>}

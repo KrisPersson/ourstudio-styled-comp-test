@@ -3,12 +3,11 @@ import { Tagline } from "../Tagline/index"
 import { H1, H2, H3, H4, H5, H6 } from "../Heading/index"
 import { Subheading } from "../Subheading/index"
 import { size } from "../../layout/helpers"
+import { Grid } from "../CssGrid/index"
 
-export const Wrapper = styled.header`
-    display: grid;
+export const Wrapper = styled(Grid)`
     grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(12, 1fr);
-
+    
     ${Tagline} {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
