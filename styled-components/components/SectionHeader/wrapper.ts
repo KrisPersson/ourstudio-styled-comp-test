@@ -13,7 +13,7 @@ export const Wrapper = styled(Grid)`
         grid-column: 1 / -1;
         margin-bottom: ${size(5)};
         ${(props) => props.theme.breakpoint.Sm} {
-            grid-column: 2 / -2;
+            grid-column: 3 / -2;
         };
         ${(props) => props.theme.breakpoint.Md} {
             grid-column: 3 / -3;
@@ -30,7 +30,7 @@ export const Wrapper = styled(Grid)`
         grid-row: 2 / 3;
         grid-column: 2 / -2;
         ${(props) => props.theme.breakpoint.Sm} {
-            grid-column: 3 / -4;
+            grid-column: 4 / -3;
         };
         ${(props) => props.theme.breakpoint.Md} {
             grid-column: 4 / -2;
@@ -39,10 +39,10 @@ export const Wrapper = styled(Grid)`
 
     ${Subheading} {
         grid-row: 3 / 4;
-        grid-column: 2 / -2;
+        grid-column: 2 / -3;
         margin-top: ${size(2.5)};
         ${(props) => props.theme.breakpoint.Sm} {
-            grid-column: 3 / -4;
+            grid-column: 4 / -4;
         };
         ${(props) => props.theme.breakpoint.Md} {
             margin-top: ${size(3)};
