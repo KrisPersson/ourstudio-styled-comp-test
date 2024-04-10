@@ -12,7 +12,7 @@ export const Page = styled.main`
 
 export const PageSection = styled.section`
   & + & {
-    margin-top: ${size(17.5)};
+    margin-top: ${size(16)};
 
     ${(props) => props.theme.breakpoint.Md} {
       margin-top: ${size(20)};

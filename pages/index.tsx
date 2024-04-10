@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { PageSection } from "../styled-components/components/Page/index";
 import LongStoryShort from "./startpage/LongStoryShort";
 import WhatWeDo from "./startpage/WhatWeDo";
+import WhoWeAre from "./startpage/WhoWeAre";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,9 @@ export default function Home() {
       </PageSection>
       <PageSection>
         <WhatWeDo />
+      </PageSection>
+      <PageSection>
+        <WhoWeAre />
       </PageSection>
     </>
   );
