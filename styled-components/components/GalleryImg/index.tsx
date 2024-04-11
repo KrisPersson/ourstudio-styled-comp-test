@@ -1,10 +1,4 @@
-import {
-  ImgWrapper,
-  ImgInner,
-  JobDepartment,
-  EmployeeName,
-  StyledImg,
-} from "./wrapper";
+import { Wrapper, ImgInner, JobDepartment, EmployeeName, Img } from "./wrapper";
 
 interface EmployeeProps {
   firstName: string;
@@ -15,12 +9,13 @@ interface EmployeeProps {
 
 export default function GalleryImg({ employee }: { employee: EmployeeProps }) {
   return (
-    <ImgWrapper>
-      <StyledImg
+    <Wrapper>
+      <Img
         src={`/portraits/${employee.imgSrc}`}
         width={320}
         height={411}
-      ></StyledImg>
+        alt={`Photo of ${employee.firstName} ${employee.lastName}`}
+      ></Img>
       <ImgInner>
         <JobDepartment>{employee.department}</JobDepartment>
         <EmployeeName>
@@ -29,6 +24,6 @@ export default function GalleryImg({ employee }: { employee: EmployeeProps }) {
           {employee.lastName}
         </EmployeeName>
       </ImgInner>
-    </ImgWrapper>
+    </Wrapper>
   );
 }

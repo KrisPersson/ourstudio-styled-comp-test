@@ -3,8 +3,8 @@ import { employees } from "./employees";
 import GalleryImg from "../GalleryImg/index";
 
 export default function Gallery() {
-  const imageItems = employees.map((employee) => {
-    return <GalleryImg employee={employee} />;
+  const imageItems = employees.map((employee, i) => {
+    return <GalleryImg key={i} employee={employee} />;
   });
 
   return (
