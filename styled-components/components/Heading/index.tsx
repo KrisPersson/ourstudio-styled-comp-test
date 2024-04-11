@@ -44,10 +44,10 @@ export const H2 = styled(HeadingBase).attrs<{ as: string }>((props) => ({
 export const H3 = styled(HeadingBase).attrs<{ as: string }>((props) => ({
   as: props.as || "h3",
 }))`
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   ${(props) => props.theme.breakpoint.Md} {
-    font-size: 4rem;
+    font-size: 1.75rem;
   }
 `;
 

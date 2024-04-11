@@ -5,6 +5,7 @@ import LongStoryShort from "./startpage/LongStoryShort";
 import WhatWeDo from "./startpage/WhatWeDo";
 import WhoWeAre from "./startpage/WhoWeAre";
 import WhatWeveDone from "./startpage/WhatWeveDone";
+import OurToolbox from "./startpage/OurToolbox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,9 @@ export default function Home() {
       </PageSection>
       <PageSection>
         <WhatWeveDone />
+      </PageSection>
+      <PageSection>
+        <OurToolbox />
       </PageSection>
     </>
   );
