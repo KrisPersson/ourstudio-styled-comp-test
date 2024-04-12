@@ -102,12 +102,8 @@ export const ImgWrapper = styled("div")`
 export const StudentsImg = styled(Image)`
   object-fit: cover;
   object-position: center;
-  width: 100%;
-  height: auto;
-  ${(props) => props.theme.breakpoint.Md} {
-    width: 100%;
-    height: auto;
-  }
+  width: auto;
+  height: 100%;
 `;
 
 export const BottomWrapper = styled("div")`

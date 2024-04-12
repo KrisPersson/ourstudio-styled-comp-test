@@ -25,6 +25,8 @@ export default function Students() {
               src={"/students/reducing.png"}
               fill={true}
               alt="Drawn image of people configuring"
+              sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 899px) 35vw, 100wv"
+              quality={100}
             />
           </ImgWrapper>
           <StudentsLink href="#">
@@ -37,6 +39,8 @@ export default function Students() {
               src={"/students/volvo.png"}
               fill={true}
               alt="Diagram of Feature extraction of Volvo car configurations"
+              sizes="50vw"
+              quality={100}
             />
           </ImgWrapper>
           <StudentsLink href="#">

@@ -6,6 +6,7 @@ export const Wrapper = styled.div``;
 
 export const Inner = styled(Grid)`
   padding-left: 0;
+  list-style: none;
   margin: 0;
   margin-top: ${size(4)};
   display: grid;

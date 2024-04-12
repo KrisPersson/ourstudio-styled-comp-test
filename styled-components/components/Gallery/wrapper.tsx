@@ -12,6 +12,7 @@ export const Inner = styled(Grid)`
   min-width: 1000px;
   grid-gap: ${size(4)};
   margin-top: ${size(4)};
+  list-style: none;
 
   ${(props) => props.theme.breakpoint.Lg} {
     grid-gap: ${size(5)};
