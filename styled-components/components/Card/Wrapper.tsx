@@ -41,9 +41,6 @@ export const ContentBottom = styled.p`
 
 export const ImgWrapper = styled.li`
   position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
 `;
 
 export const StyledImg = styled(Image)`

@@ -10,21 +10,22 @@ import {
 
 export const Wrapper = styled(ImgWrapper)`
   grid-column: auto / span 12;
+  min-height: 340px;
+
   ${(props) => props.theme.breakpoint.Sm} {
+    min-height: 380px;
   }
   ${(props) => props.theme.breakpoint.Md} {
     grid-column: auto / span 6;
+  }
+  ${(props) => props.theme.breakpoint.Lg} {
+    min-height: 486px;
   }
 `;
 
 export const Img = styled(StyledImg)`
   object-position: center;
-  max-height: 340px;
-  ${(props) => props.theme.breakpoint.Md} {
-    max-height: 438px;
-  }
-  ${(props) => props.theme.breakpoint.Lg} {
-  }
+  min-height: 100%;
 `;
 
 export const ImgInner = styled(CardContentWrapper)``;

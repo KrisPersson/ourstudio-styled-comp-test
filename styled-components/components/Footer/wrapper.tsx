@@ -53,6 +53,7 @@ export const AddressBox = styled.p`
     font-size: 1.75rem;
     position: absolute;
     right: 0;
+    line-height: ${size(5)};
   }
 `;
 

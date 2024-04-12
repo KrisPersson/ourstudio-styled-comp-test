@@ -14,8 +14,8 @@ export default function GalleryImg({ employee }: { employee: EmployeeProps }) {
         src={`/portraits/${employee.imgSrc}`}
         fill={true}
         sizes="25vw"
-        alt={`Photo of ${employee.firstName} ${employee.lastName}`}
         quality={100}
+        alt={`Photo of ${employee.firstName} ${employee.lastName}`}
       ></Img>
       <ImgInner>
         <JobDepartment>{employee.department}</JobDepartment>
