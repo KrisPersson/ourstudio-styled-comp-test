@@ -6,26 +6,30 @@ import WhatWeDo from "./startpage/WhatWeDo";
 import WhoWeAre from "./startpage/WhoWeAre";
 import WhatWeveDone from "./startpage/WhatWeveDone";
 import OurToolbox from "./startpage/OurToolbox";
+import WorkingWithStudents from "./startpage/WorkingWithStudents";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <PageSection>
+      <PageSection aria-label="Hero">
         <LongStoryShort />
       </PageSection>
-      <PageSection>
+      <PageSection aria-label="What we do">
         <WhatWeDo />
       </PageSection>
-      <PageSection>
+      <PageSection aria-label="Who we are">
         <WhoWeAre />
       </PageSection>
-      <PageSection>
+      <PageSection aria-label="What we've done">
         <WhatWeveDone />
       </PageSection>
-      <PageSection>
+      <PageSection aria-label="Our Toolbox">
         <OurToolbox />
+      </PageSection>
+      <PageSection aria-label="Working with students">
+        <WorkingWithStudents />
       </PageSection>
     </>
   );
