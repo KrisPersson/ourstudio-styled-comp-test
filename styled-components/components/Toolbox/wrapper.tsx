@@ -14,7 +14,7 @@ export const Wrapper = styled(Grid)`
 `;
 
 export const Item = styled(Grid)`
-  grid-template-rows: 40px auto;
+  grid-template-rows: ${size(5)} auto;
   grid-row: auto;
   grid-column: auto / span 12;
   row-gap: ${size(2)};

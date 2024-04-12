@@ -4,7 +4,6 @@ import { size } from "../../layout/helpers";
 export const Wrapper = styled.footer`
   background: ${(props) => props.theme.colors.secondaryDefault};
   padding-block: ${size(10)};
-  z-index: 10;
   ${(props) => props.theme.breakpoint.Md} {
     padding-block: ${size(19)};
   }

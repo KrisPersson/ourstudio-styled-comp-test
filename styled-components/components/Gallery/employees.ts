@@ -37,15 +37,15 @@ export const employees = [
         imgSrc: "ludvig.png"
     },
     {
-        firstName: "Alexander",
-        lastName: "Erlandsson",
-        department: "Frontend",
-        imgSrc: "alex.png"
+        firstName: "Osip",
+        lastName: "Mandelstam",
+        department: "Emotional support",
+        imgSrc: "osip.jpeg"
     },
     {
-        firstName: "Anton",
-        lastName: "Wernvik",
-        department: "Backend",
-        imgSrc: "anton.png"
+        firstName: "Jackson",
+        lastName: "Persson",
+        department: "Emotional support",
+        imgSrc: "jackson.jpeg"
     },
 ]

@@ -12,9 +12,10 @@ export default function GalleryImg({ employee }: { employee: EmployeeProps }) {
     <Wrapper>
       <Img
         src={`/portraits/${employee.imgSrc}`}
-        width={320}
-        height={411}
+        fill={true}
+        sizes="25vw"
         alt={`Photo of ${employee.firstName} ${employee.lastName}`}
+        quality={100}
       ></Img>
       <ImgInner>
         <JobDepartment>{employee.department}</JobDepartment>

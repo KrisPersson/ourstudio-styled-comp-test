@@ -9,13 +9,16 @@ import {
 } from "../Card/wrapper";
 
 export const Wrapper = styled(ImgWrapper)`
-  grid-row: auto;
+  min-height: 290px;
   grid-column: auto / span 3;
+  ${(props) => props.theme.breakpoint.Lg} {
+    min-height: 410px;
+  }
 `;
 
 export const Img = styled(StyledImg)`
   object-position: center;
-
+  min-height: 180px;
   ${(props) => props.theme.breakpoint.LtLg} {
     max-height: 291px;
   }

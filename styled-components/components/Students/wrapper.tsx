@@ -86,13 +86,16 @@ export const Card = styled.article`
 export const ImgWrapper = styled("div")`
   overflow: hidden;
   position: relative;
-  min-height: 275px;
+  min-height: ${size(34.5)};
 
   ${(props) => props.theme.breakpoint.Sm} {
-    min-height: 250px;
+    min-height: ${size(31.25)};
   }
-  ${(props) => props.theme.breakpoint.Sm} {
-    min-height: 250px;
+  ${(props) => props.theme.breakpoint.Md} {
+    min-height: ${size(34.5)};
+  }
+  ${(props) => props.theme.breakpoint.Lg} {
+    min-height: ${size(37.5)};
   }
 `;
 
@@ -115,10 +118,8 @@ export const BottomWrapper = styled("div")`
   grid-column: 2 / -2;
   ${(props) => props.theme.breakpoint.Sm} {
     grid-column: 3 / -3;
-    min-height: 250px;
   }
   ${(props) => props.theme.breakpoint.Md} {
     grid-column: 4 / -4;
-    min-height: 250px;
   }
 `;
