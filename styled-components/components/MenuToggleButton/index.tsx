@@ -14,6 +14,7 @@ export const MenuToggleButton = styled.button`
   gap: ${size(2.75)};
   cursor: pointer;
   border-radius: max(100vh, 100vw);
+  z-index: 6;
   ${(props) => props.theme.breakpoint.Md} {
     display: flex;
   }

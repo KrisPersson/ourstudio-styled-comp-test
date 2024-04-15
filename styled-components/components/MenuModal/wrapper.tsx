@@ -1,6 +1,7 @@
 import { size } from "../../layout/helpers";
 import { styled } from "styled-components";
 import { ButtonReset } from "../../layout/reset";
+import { MenuToggleButton } from "../MenuToggleButton/index";
 import Image from "next/image";
 
 export const Wrapper = styled.div`
@@ -25,6 +26,9 @@ export const Inner = styled.div`
     margin-top: ${(props) => props.theme.spacing.padding.page.top.desktop};
     height: calc(100vh - (${size(5)} * 2));
     grid-template-rows: ${size(18)} 1fr auto;
+    ${MenuToggleButton} {
+      top: ${(props) => props.theme.spacing.padding.page.top.desktop};
+    }
   }
 `;
 
