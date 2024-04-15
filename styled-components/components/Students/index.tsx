@@ -18,8 +18,8 @@ export default function Students() {
         utveckla samtida och framtida tekniker och forskning. Ni kan läsa mer om
         våra föreslagna exjobb nedan.
       </DesktopOnlyTextContent>
-      <CardContainer>
-        <Card>
+      <CardContainer as="ul">
+        <Card as="li">
           <ImgWrapper>
             <StudentsImg
               src={"/students/reducing.png"}
@@ -33,7 +33,7 @@ export default function Students() {
             Reduction of car configuration rules
           </StudentsLink>
         </Card>
-        <Card>
+        <Card as="li">
           <ImgWrapper>
             <StudentsImg
               src={"/students/volvo.png"}

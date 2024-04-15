@@ -32,7 +32,7 @@ export default function MenuModal({
             <>
               <MenuToggleButton
                 onClick={() => setShowHamburgerMenu((prev) => !prev)}
-                title="Hide/Show menu"
+                title="Close menu"
               >
                 <Image
                   src="/logo/logo-o.svg"
@@ -47,23 +47,26 @@ export default function MenuModal({
                   alt="OurStudio logo"
                 />
               </MenuToggleButton>
-              <CloseBtn
-                title="Close menu"
-                onClick={() => setShowHamburgerMenu((prev) => !prev)}
-              >
-                Stäng
-                <Image
-                  src="/icons/x-close-white.svg"
-                  width={28}
-                  height={28}
-                  aria-hidden={true}
-                  alt="Close"
-                />
-              </CloseBtn>
             </>
           )}
-
-          <Nav navType="Primary" handleClickLink={handleClickLink} />
+          <CloseBtn
+            title="Close menu"
+            onClick={() => setShowHamburgerMenu((prev) => !prev)}
+          >
+            Stäng
+            <Image
+              src="/icons/x-close-white.svg"
+              width={28}
+              height={28}
+              aria-hidden={true}
+              alt="Close"
+            />
+          </CloseBtn>
+          <Nav
+            navType="Primary"
+            handleClickLink={handleClickLink}
+            aria-label="Main navigation"
+          />
           <AddressBox>
             <MailToLink
               href="mailto:hello@ourstudio.se?subject=Hello Our Studio!"

@@ -86,7 +86,7 @@ export const Card = styled.article`
 export const ImgWrapper = styled("div")`
   overflow: hidden;
   position: relative;
-  min-height: ${size(31.25)};
+  min-height: ${size(32)};
   width: auto;
   @media (max-width: 380px) {
     min-height: ${size(21)};
@@ -97,7 +97,6 @@ export const ImgWrapper = styled("div")`
   }
 
   ${(props) => props.theme.breakpoint.Sm} {
-    min-height: ${size(30.25)};
   }
   ${(props) => props.theme.breakpoint.Md} {
     min-height: ${size(34.5)};
@@ -110,8 +109,6 @@ export const ImgWrapper = styled("div")`
 export const StudentsImg = styled(Image)`
   object-fit: cover;
   object-position: center;
-  width: auto;
-  height: 100%;
 `;
 
 export const BottomWrapper = styled("div")`

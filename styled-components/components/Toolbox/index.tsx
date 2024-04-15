@@ -2,8 +2,8 @@ import { Wrapper, Item, MarkerLine, ToolTitle, TextContent } from "./wrapper";
 
 export default function Toolbox() {
   return (
-    <Wrapper>
-      <Item>
+    <Wrapper as="ul">
+      <Item as="li">
         <MarkerLine />
         <ToolTitle>Development</ToolTitle>
         <TextContent>
@@ -11,7 +11,7 @@ export default function Toolbox() {
           (oftast; python, go, C#, kubernetes, javascript, react) …
         </TextContent>
       </Item>
-      <Item>
+      <Item as="li">
         <MarkerLine />
         <ToolTitle>UI/UX</ToolTitle>
         <TextContent>
@@ -22,7 +22,7 @@ export default function Toolbox() {
           effektiva, moderna och attraktiva gränsnitt.
         </TextContent>
       </Item>
-      <Item>
+      <Item as="li">
         <MarkerLine />
         <ToolTitle>Machine learning</ToolTitle>
         <TextContent>

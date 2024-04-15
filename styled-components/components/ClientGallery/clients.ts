@@ -5,7 +5,7 @@ export const clients = [
         description: "Onlineshopping för Sveriges största sportbutik",
         imgSrc: "intersport.png",
         alt: "Image of people working out",
-        imgPosition: "center"
+        imgPosition: "30% 30%"
     },
     {
         name: "Wayke",

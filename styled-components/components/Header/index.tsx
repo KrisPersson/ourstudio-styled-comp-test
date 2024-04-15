@@ -24,19 +24,20 @@ const Header = () => {
           <Nav navType="Secondary" />
           <HamburgerButton
             onClick={() => setShowHamburgerMenu((prev) => !prev)}
+            title="Open menu"
           >
             <Image
               src="/icons/hamburger-menu-white.svg"
               width={32}
               height={18}
-              alt="Show menu"
+              alt="Hamburger-menu icon"
               aria-hidden
             />
           </HamburgerButton>
           {!showHamburgerMenu && (
             <MenuToggleButton
               onClick={() => setShowHamburgerMenu((prev) => !prev)}
-              title="Hide/Show menu"
+              title="Open menu"
             >
               <Image
                 src="/logo/logo-o.svg"

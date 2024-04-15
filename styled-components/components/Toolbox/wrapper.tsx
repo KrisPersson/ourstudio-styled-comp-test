@@ -7,7 +7,8 @@ import { size } from "../../layout/helpers";
 export const Wrapper = styled(Grid)`
   margin-top: ${size(5.5)};
   row-gap: ${size(7)};
-
+  padding-left: 0;
+  list-style: none;
   ${(props) => props.theme.breakpoint.Md} {
     margin-top: ${size(11)};
   }

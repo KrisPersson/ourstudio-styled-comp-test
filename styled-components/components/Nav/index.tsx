@@ -6,7 +6,7 @@ export default function Nav({
   handleClickLink,
 }: {
   navType: "Primary" | "Secondary";
-  handleClickLink: () => void;
+  handleClickLink?: () => void;
 }) {
   const navLinks = NavLinks.map((link) => {
     return (
