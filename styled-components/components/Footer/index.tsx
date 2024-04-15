@@ -3,7 +3,7 @@ import { Container } from "../Container/index";
 
 const Footer = () => {
   return (
-    <Wrapper aria-label="Page footer">
+    <Wrapper id="main-footer" aria-label="Page footer">
       <Container>
         <Content>
           <Headline>Vill du hitta på något tillsammans med oss?</Headline>

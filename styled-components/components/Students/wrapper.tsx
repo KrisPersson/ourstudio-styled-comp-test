@@ -86,10 +86,18 @@ export const Card = styled.article`
 export const ImgWrapper = styled("div")`
   overflow: hidden;
   position: relative;
-  min-height: ${size(34.5)};
+  min-height: ${size(31.25)};
+  width: auto;
+  @media (max-width: 380px) {
+    min-height: ${size(21)};
+  }
+
+  @media (min-width: 490px) and (max-width: 599px) {
+    min-height: ${size(37.5)};
+  }
 
   ${(props) => props.theme.breakpoint.Sm} {
-    min-height: ${size(31.25)};
+    min-height: ${size(30.25)};
   }
   ${(props) => props.theme.breakpoint.Md} {
     min-height: ${size(34.5)};

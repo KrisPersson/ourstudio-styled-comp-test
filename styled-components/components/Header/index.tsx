@@ -10,6 +10,10 @@ import MenuModal from "../MenuModal/index";
 const Header = () => {
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
 
+  function handleClickLink() {
+    setShowHamburgerMenu(false);
+  }
+
   return (
     <Wrapper aria-label="Page header">
       <Container>
@@ -52,6 +56,7 @@ const Header = () => {
           <MenuModal
             showHamburgerMenu={showHamburgerMenu}
             setShowHamburgerMenu={setShowHamburgerMenu}
+            handleClickLink={handleClickLink}
           />
         </Inner>
       </Container>

@@ -26,6 +26,7 @@ export const Wrapper = styled(ImgWrapper)`
 export const Img = styled(StyledImg)`
   object-position: center;
   min-height: 100%;
+  width: 100%;
 `;
 
 export const ImgInner = styled(CardContentWrapper)``;

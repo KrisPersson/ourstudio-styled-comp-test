@@ -13,22 +13,25 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <PageSection aria-label="Hero">
+      <PageSection id="section-long-story-short" aria-label="Long Story Short">
         <LongStoryShort />
       </PageSection>
-      <PageSection aria-label="What we do">
+      <PageSection id="section-what-we-do" aria-label="What we do">
         <WhatWeDo />
       </PageSection>
-      <PageSection aria-label="Who we are">
+      <PageSection id="section-who-we-are" aria-label="Who we are">
         <WhoWeAre />
       </PageSection>
-      <PageSection aria-label="What we've done">
+      <PageSection id="section-what-weve-done" aria-label="What we've done">
         <WhatWeveDone />
       </PageSection>
-      <PageSection aria-label="Our Toolbox">
+      <PageSection id="section-our-toolbox" aria-label="Our Toolbox">
         <OurToolbox />
       </PageSection>
-      <PageSection aria-label="Working with students">
+      <PageSection
+        id="section-working-with-students"
+        aria-label="Working with students"
+      >
         <WorkingWithStudents />
       </PageSection>
     </>

@@ -16,9 +16,11 @@ import {
 export default function MenuModal({
   showHamburgerMenu,
   setShowHamburgerMenu,
+  handleClickLink,
 }: {
   showHamburgerMenu: boolean;
   setShowHamburgerMenu: Dispatch<SetStateAction<boolean>>;
+  handleClickLink: () => void;
 }) {
   const displayValue = showHamburgerMenu ? "block" : "none";
 
@@ -61,7 +63,7 @@ export default function MenuModal({
             </>
           )}
 
-          <Nav navType="Primary" />
+          <Nav navType="Primary" handleClickLink={handleClickLink} />
           <AddressBox>
             <MailToLink
               href="mailto:hello@ourstudio.se?subject=Hello Our Studio!"
