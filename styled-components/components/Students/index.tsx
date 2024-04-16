@@ -27,6 +27,7 @@ export default function Students() {
               alt="Drawn image of people configuring"
               sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 1200px) 35vw"
               quality={100}
+              style={{ background: "rgb(230,211,201)" }}
             />
           </ImgWrapper>
           <StudentsLink href="#">
@@ -41,6 +42,7 @@ export default function Students() {
               alt="Diagram of Feature extraction of Volvo car configurations"
               sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 1200px) 35vw"
               quality={100}
+              style={{ background: "rgb(255 255 255)" }}
             />
           </ImgWrapper>
           <StudentsLink href="#">

@@ -44,6 +44,7 @@ export const StudentsLink = styled(Link)`
 export const CardContainer = styled(Grid)`
   grid-template-rows: 1fr;
   grid-column: 1 / -1;
+  padding-left: 0;
   gap: ${size(5)};
   margin-top: ${size(3)};
   ${(props) => props.theme.breakpoint.LtSm} {
@@ -51,64 +52,52 @@ export const CardContainer = styled(Grid)`
     flex-direction: column;
     justify-content: center;
   }
+  ${(props) => props.theme.breakpoint.Md} {
+    grid-column: 2 / -2;
+  }
+  ${(props) => props.theme.breakpoint.Lg} {
+    grid-column: 3 / -3;
+  }
 `;
 
 export const Card = styled.article`
   display: flex;
   flex-direction: column;
   row-gap: ${size(2)};
-  grid-row: auto / span 1;
-  grid-column: 3 / span 4;
-  & + & {
-    grid-column: 7 / span 4;
-  }
-
-  ${(props) => props.theme.breakpoint.Sm} {
-    grid-column: 1 / span 6;
-    & + & {
-      grid-column: 7 / span 6;
-    }
-  }
-  ${(props) => props.theme.breakpoint.Md} {
-    grid-column: 2 / span 5;
-    & + & {
-      grid-column: 7 / span 5;
-    }
-  }
-  ${(props) => props.theme.breakpoint.Lg} {
-    grid-column: 3 / span 4;
-    & + & {
-      grid-column: 7 / span 4;
-    }
-  }
+  grid-row: auto;
+  grid-column: auto / span 6;
 `;
 
 export const ImgWrapper = styled("div")`
   overflow: hidden;
   position: relative;
-  min-height: ${size(32)};
+  min-height: ${size(22)};
+  background: white;
   width: auto;
   @media (max-width: 380px) {
     min-height: ${size(21)};
   }
 
   @media (min-width: 490px) and (max-width: 599px) {
-    min-height: ${size(37.5)};
+    min-height: ${size(25)};
   }
 
   ${(props) => props.theme.breakpoint.Sm} {
   }
   ${(props) => props.theme.breakpoint.Md} {
-    min-height: ${size(34.5)};
+    min-height: ${size(31.25)};
   }
   ${(props) => props.theme.breakpoint.Lg} {
-    min-height: ${size(37.5)};
+    min-height: ${size(31.25)};
   }
 `;
 
 export const StudentsImg = styled(Image)`
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+  @media (max-width: 380px) {
+    object-fit: cover;
+  }
 `;
 
 export const BottomWrapper = styled("div")`

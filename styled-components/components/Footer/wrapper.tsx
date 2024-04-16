@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { size } from "../../layout/helpers";
 
 export const Wrapper = styled.footer`
+  margin-top: auto;
   background: ${(props) => props.theme.colors.secondaryDefault};
   padding-block: ${size(10)};
   ${(props) => props.theme.breakpoint.Md} {
