@@ -5,7 +5,7 @@ export const MarkerLineBefore = css`
   content: "";
   background: ${(props) => props.theme.colors.secondaryDefault};
   display: none;
-  width: ${size(3)};
+  width: ${size(2)};
   height: 1px;
   color: ${(props) => props.theme.colors.secondaryDefault};
 

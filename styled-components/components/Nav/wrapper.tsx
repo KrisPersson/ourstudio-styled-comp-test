@@ -55,6 +55,7 @@ const aLinkClassPrimary = css`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  gap: ${size(1)};
   &::before {
     ${MarkerLineBefore}
   }
@@ -66,6 +67,6 @@ const aLinkClassPrimary = css`
   }
   ${(props) => props.theme.breakpoint.Md} {
     font-size: 2.25rem;
-    gap: ${size(3)};
+    gap: ${size(2)};
   }
 `;
