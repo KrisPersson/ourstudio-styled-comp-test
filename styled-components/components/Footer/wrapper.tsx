@@ -57,9 +57,3 @@ export const AddressBox = styled.p`
     line-height: ${size(5)};
   }
 `;
-
-// ${(props) => props.theme.breakpoint.Md} {
-//     //position: sticky;
-//     //top: ${size(-6)};
-//     padding-top: ${size(12)};
-//   }

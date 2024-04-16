@@ -1,8 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
 import { Theme } from "./theme";
-// import { CSSVariables } from "./css-variables";
-// import { Colors } from "./colors";
 import { size } from "./helpers";
 
 export default createGlobalStyle<{ theme: Theme }>`
@@ -24,7 +21,7 @@ export default createGlobalStyle<{ theme: Theme }>`
     background-color: ${(props) => props.theme.colors.primaryDefault};
     color: ${(props) => props.theme.colors.primaryLight};
     font-family: ${(props) => props.theme.font.family.main};
-    line-height: ${(props) => props.theme.font.lineHeight.main};
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

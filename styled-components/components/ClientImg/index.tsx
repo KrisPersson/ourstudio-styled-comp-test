@@ -5,7 +5,7 @@ interface ClientProps {
   description: string;
   imgSrc: string;
   alt: string;
-  imgPosition: "center" | "left" | "right";
+  imgPosition: string;
 }
 
 export default function ClientImg({ client }: { client: ClientProps }) {

@@ -35,7 +35,6 @@ export const Wrapper = styled(Grid)`
         ${(props) => props.theme.breakpoint.Md} {
             grid-column: 4 / -2;
         }
-    
     };
     ${H2} {
         grid-row: 2 / 3;
@@ -47,7 +46,6 @@ export const Wrapper = styled(Grid)`
             grid-column: 4 / -3;
         };
     };
-
 
     ${Subheading} {
         grid-row: 3 / 4;

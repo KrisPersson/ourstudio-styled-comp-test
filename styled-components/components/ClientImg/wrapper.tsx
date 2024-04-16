@@ -10,16 +10,16 @@ import {
 
 export const Wrapper = styled(ImgWrapper)`
   grid-column: auto / span 12;
-  min-height: 340px;
+  min-height: ${size(42.5)};
 
   ${(props) => props.theme.breakpoint.Sm} {
-    min-height: 380px;
+    min-height: ${size(47.5)};
   }
   ${(props) => props.theme.breakpoint.Md} {
     grid-column: auto / span 6;
   }
   ${(props) => props.theme.breakpoint.Lg} {
-    min-height: 486px;
+    min-height: ${size(60.75)};
   }
 `;
 

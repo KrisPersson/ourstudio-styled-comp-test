@@ -9,18 +9,18 @@ import {
 } from "../Card/wrapper";
 
 export const Wrapper = styled(ImgWrapper)`
-  min-height: 290px;
+  min-height: ${size(36.25)};
   grid-column: auto / span 3;
   ${(props) => props.theme.breakpoint.Lg} {
-    min-height: 410px;
+    min-height: ${size(51.25)};
   }
 `;
 
 export const Img = styled(StyledImg)`
   object-position: center;
-  min-height: 180px;
+  min-height: ${size(22.25)};
   ${(props) => props.theme.breakpoint.LtLg} {
-    max-height: 291px;
+    min-height: ${size(36.25)};
   }
 `;
 
