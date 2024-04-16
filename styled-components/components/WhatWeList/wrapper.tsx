@@ -4,16 +4,15 @@ import { Tagline } from "../Tagline/index";
 import { size } from "../../layout/helpers";
 
 export const Wrapper = styled(Grid)`
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: 62px auto;
   width: 100%;
   flex: 1 1 100%;
   ${Tagline} {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    margin-bottom: ${size(4)};
-    ${(props) => props.theme.breakpoint.Md} {
-      margin-bottom: ${size(11)};
-    }
+  }
+  ${(props) => props.theme.breakpoint.Md} {
+    grid-template-rows: 118px auto;
   }
 `;
 
