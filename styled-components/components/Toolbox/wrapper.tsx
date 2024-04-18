@@ -5,13 +5,9 @@ import { H3 } from "../Heading/index";
 import { size } from "../../layout/helpers";
 
 export const Wrapper = styled(Grid)`
-  margin-top: ${size(5.5)};
   row-gap: ${size(7)};
   padding-left: 0;
   list-style: none;
-  ${(props) => props.theme.breakpoint.Md} {
-    margin-top: ${size(11)};
-  }
 `;
 
 export const Item = styled(Grid)`
@@ -49,7 +45,7 @@ export const TextContent = styled.p`
   line-height: ${size(3.5)};
   color: ${(props) => props.theme.colors.primaryLight};
   grid-row: 2 / -1;
-  grid-column: 3 / -2;
+  grid-column: 3 / -1;
   ${(props) => props.theme.breakpoint.Sm} {
     grid-column-start: 2;
   }

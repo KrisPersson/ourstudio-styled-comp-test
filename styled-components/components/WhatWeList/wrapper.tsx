@@ -7,6 +7,7 @@ export const Wrapper = styled(Grid)`
   grid-template-rows: 62px auto;
   width: 100%;
   flex: 1 1 100%;
+
   ${Tagline} {
     grid-row: 1 / 2;
     grid-column: 1 / -1;

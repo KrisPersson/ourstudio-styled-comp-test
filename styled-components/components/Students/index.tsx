@@ -9,15 +9,11 @@ import {
   BottomWrapper,
   CardContainer,
 } from "./wrapper";
+import { StackLarge } from "../Stack/index";
 
 export default function Students() {
   return (
     <Wrapper>
-      <DesktopOnlyTextContent>
-        Vi arbetar tillsammans med studenter och deras examensarbete för att
-        utveckla samtida och framtida tekniker och forskning. Ni kan läsa mer om
-        våra föreslagna exjobb nedan.
-      </DesktopOnlyTextContent>
       <CardContainer as="ul">
         <Card as="li">
           <ImgWrapper>

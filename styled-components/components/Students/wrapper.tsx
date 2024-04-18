@@ -7,12 +7,6 @@ import Image from "next/image";
 export const Wrapper = styled(Grid)`
   grid-template-rows: repeat(3, auto);
   row-gap: ${size(3)};
-  margin-top: ${size(3)};
-  margin-bottom: ${size(0)};
-  ${(props) => props.theme.breakpoint.Md} {
-    row-gap: ${size(11)};
-    margin-bottom: ${size(17.5)};
-  }
 `;
 
 export const TextContent = styled.p`
@@ -32,7 +26,6 @@ export const TextContent = styled.p`
 export const DesktopOnlyTextContent = styled(TextContent)`
   display: none;
   ${(props) => props.theme.breakpoint.Md} {
-    grid-row: 1 / span 1;
     display: block;
   }
 `;
@@ -46,7 +39,6 @@ export const CardContainer = styled(Grid)`
   grid-column: 1 / -1;
   padding-left: 0;
   gap: ${size(5)};
-  margin-top: ${size(3)};
   ${(props) => props.theme.breakpoint.LtSm} {
     display: flex;
     flex-direction: column;
@@ -104,7 +96,7 @@ export const BottomWrapper = styled("div")`
   display: flex;
   flex-direction: column;
   row-gap: ${size(2)};
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 2 / -2;
   ${(props) => props.theme.breakpoint.Sm} {
     grid-column: 3 / -3;

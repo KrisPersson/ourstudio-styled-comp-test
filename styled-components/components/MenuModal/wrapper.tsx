@@ -5,7 +5,6 @@ import { MenuToggleButton } from "../MenuToggleButton/index";
 import Image from "next/image";
 
 export const Wrapper = styled.div`
-  font-family: ${(props) => props.theme.font.family.main};
   background-color: ${(props) => props.theme.colors.primaryDefault};
   position: fixed;
   left: 0;
