@@ -56,7 +56,7 @@ export const Wrapper = styled(Grid)`
         };
         ${(props) => props.theme.breakpoint.Md} {
             margin-top: ${size(3)};
-            grid-column: 4 / -6;
+            grid-column: 4 / -5;
         };
     };
     

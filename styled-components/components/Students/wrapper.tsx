@@ -5,8 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const Wrapper = styled(Grid)`
-  grid-template-rows: repeat(3, auto);
-  row-gap: ${size(3)};
+  grid-template-rows: repeat(2, auto);
+  row-gap: ${size(5)};
+
+  ${(props) => props.theme.breakpoint.Md} {
+    row-gap: ${size(11)};
+  }
 `;
 
 export const TextContent = styled.p`
@@ -39,6 +43,7 @@ export const CardContainer = styled(Grid)`
   grid-column: 1 / -1;
   padding-left: 0;
   gap: ${size(5)};
+  margin: 0;
   ${(props) => props.theme.breakpoint.LtSm} {
     display: flex;
     flex-direction: column;
