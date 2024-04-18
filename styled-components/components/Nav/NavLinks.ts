@@ -2,22 +2,22 @@
 export const NavLinks = [
     {
         title: "What we do",
-        url: "#"
+        url: "#section-what-we-do"
     },
     {
         title: "Who we are",
-        url: "#"
+        url: "#section-who-we-are"
     },
     {
         title: "What we've done",
-        url: "#"
+        url: "#section-what-weve-done"
     },
     {
         title: "Our toolbox",
-        url: "#"
+        url: "#section-our-toolbox"
     },
     {
         title: "Contact",
-        url: "#"
+        url: "#main-footer"
     }
 ]

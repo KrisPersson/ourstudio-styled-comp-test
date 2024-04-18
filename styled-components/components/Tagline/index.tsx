@@ -5,6 +5,7 @@ export const Tagline = styled.p`
   color: ${(props) => props.theme.colors.secondaryDefault};
   font-size: 0.75rem;
   letter-spacing: 4.8px;
+  text-transform: uppercase;
   margin-bottom: ;
   ${(props) => props.theme.breakpoint.Md} {
     font-size: 1.25rem;

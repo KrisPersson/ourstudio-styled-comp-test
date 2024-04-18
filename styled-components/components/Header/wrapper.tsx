@@ -21,11 +21,11 @@ export const Inner = styled.div`
 
 export const LogoContainer = styled.div`
   position: relative;
-  min-width: 139px;
-  min-height: 25px;
+  min-width: ${size(17.5)};
+  min-height: ${size(3)};
   ${(props) => props.theme.breakpoint.Md} {
-    min-width: 161px;
-    min-height: 29px;
+    min-width: ${size(20)};
+    min-height: ${size(3.5)};
   }
 `;
 
@@ -48,14 +48,3 @@ export const HamburgerButton = styled.button`
     display: none;
   }
 `;
-
-// ${(props) => props.theme.breakpoint.Md} {
-//     //position: sticky;
-//     //top: ${size(-6)};
-//     padding-top: ${size(12)};
-//   }
-
-//   ${(props) => props.theme.breakpoint.LtSm} {
-//     position: sticky;
-//     top: ${size(-3)};
-//   }

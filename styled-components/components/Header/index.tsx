@@ -10,6 +10,10 @@ import MenuModal from "../MenuModal/index";
 const Header = () => {
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
 
+  function handleClickLink() {
+    setShowHamburgerMenu(false);
+  }
+
   return (
     <Wrapper aria-label="Page header">
       <Container>
@@ -20,19 +24,20 @@ const Header = () => {
           <Nav navType="Secondary" />
           <HamburgerButton
             onClick={() => setShowHamburgerMenu((prev) => !prev)}
+            title="Open menu"
           >
             <Image
               src="/icons/hamburger-menu-white.svg"
               width={32}
               height={18}
-              alt="Show menu"
+              alt="Hamburger-menu icon"
               aria-hidden
             />
           </HamburgerButton>
           {!showHamburgerMenu && (
             <MenuToggleButton
               onClick={() => setShowHamburgerMenu((prev) => !prev)}
-              title="Hide/Show menu"
+              title="Open menu"
             >
               <Image
                 src="/logo/logo-o.svg"
@@ -52,6 +57,7 @@ const Header = () => {
           <MenuModal
             showHamburgerMenu={showHamburgerMenu}
             setShowHamburgerMenu={setShowHamburgerMenu}
+            handleClickLink={handleClickLink}
           />
         </Inner>
       </Container>

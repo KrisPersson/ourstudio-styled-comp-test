@@ -17,10 +17,6 @@ export const theme = {
     family: {
       main: "DM Sans, sans-serif",
     },
-    lineHeight: {
-      main: "1.5",
-      alt: "1.1",
-    },
     weight: {
       regular: "400",
       medium: "500",
@@ -40,7 +36,6 @@ export const theme = {
   size: {
     baseUnit: "8px",
     containerMaxWidth: "1560px",
-    contentMaxWidth: "560px",
   },
   spacing: {
     gutter: {

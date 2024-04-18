@@ -1,23 +1,22 @@
-import { styled } from "styled-components";
+import { styled, css } from "styled-components";
 import { size } from "../../layout/helpers";
 import Link from "next/link";
+import { MarkerLineBefore } from "../MarkerLine/index";
 
-import { theme } from "../../layout/theme";
-
-const navClassPrimary = `
+const navClassPrimary = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-row: 2 / span 1;
+  z-index: 2;
+`;
+const navClassSecondary = css`
+  display: none;
+  justify-content: unset;
+  ${(props) => props.theme.breakpoint.Md} {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    grid-row: 2 / span 1;
-    z-index: 2;
-    `;
-const navClassSecondary = `
-    display: none;
-    justify-content: unset;
-    ${theme.breakpoint.Md} {
-      display: flex;
-      justify-content: space-between;
-    };
+  }
 `;
 
 export const StyledNav = styled.nav<{ $primary?: boolean }>`
@@ -35,12 +34,12 @@ export const Ul = styled.ul<{ $primary?: boolean }>`
 
   ${(props) => props.$primary && ulClassPrimary}
 `;
-const ulClassPrimary = `
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-weight: 600;
-    align-items: flex-start;
-    gap: ${size(2)};
+const ulClassPrimary = css`
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-items: flex-start;
+  gap: ${size(2)};
 `;
 
 export const ALink = styled(Link)<{ $primary?: boolean }>`
@@ -52,26 +51,22 @@ export const ALink = styled(Link)<{ $primary?: boolean }>`
   ${(props) => props.$primary && aLinkClassPrimary}
 `;
 
-const aLinkClassPrimary = `
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
+const aLinkClassPrimary = css`
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: ${size(1)};
+  &::before {
+    ${MarkerLineBefore}
+  }
+  &:hover {
     &::before {
-      content: '';
-      background: ${theme.colors.secondaryDefault};
-      display: none;
-      width: ${size(4)};
-      height: 1px;
-      color: ${theme.colors.secondaryDefault};
-    };
-    &:hover {
-      &::before {
-        display: block;
-      }
-      color: ${theme.colors.secondaryDefault};
-    };
-    ${theme.breakpoint.Md} {
-      font-size: 2.25rem;
-      gap: ${size(3)};
-    };
-  `;
+      display: block;
+    }
+    color: ${(props) => props.theme.colors.secondaryDefault};
+  }
+  ${(props) => props.theme.breakpoint.Md} {
+    font-size: 2.25rem;
+    gap: ${size(2)};
+  }
+`;

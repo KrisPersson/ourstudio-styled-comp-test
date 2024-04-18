@@ -3,19 +3,20 @@ import { Tagline } from "../Tagline/index"
 import { H1, H2, H3, H4, H5, H6 } from "../Heading/index"
 import { Subheading } from "../Subheading/index"
 import { size } from "../../layout/helpers"
+import { Grid } from "../CssGrid/index"
 
-export const Wrapper = styled.header`
-    display: grid;
+export const Wrapper = styled(Grid)`
     grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(12, 1fr);
-
+    
     ${Tagline} {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         margin-bottom: ${size(5)};
+        ${(props) => props.theme.breakpoint.Sm} {
+            grid-column: 3 / -2;
+        };
         ${(props) => props.theme.breakpoint.Md} {
-            grid-row: 1 / 2;
-            grid-column: 3 / -1;
+            grid-column: 3 / -3;
             margin-bottom: ${size(11)};
         };
     };
@@ -28,21 +29,34 @@ export const Wrapper = styled.header`
     ${H6} {
         grid-row: 2 / 3;
         grid-column: 2 / -2;
-
+        ${(props) => props.theme.breakpoint.Sm} {
+            grid-column: 4 / -3;
+        };
         ${(props) => props.theme.breakpoint.Md} {
-            grid-row: 2 / 3;
             grid-column: 4 / -2;
         }
+    };
+    ${H2} {
+        grid-row: 2 / 3;
+        grid-column: 2 / -2;
+        ${(props) => props.theme.breakpoint.Sm} {
+            grid-column: 4 / -3;
+        };
+        ${(props) => props.theme.breakpoint.Md} {
+            grid-column: 4 / -3;
+        };
     };
 
     ${Subheading} {
         grid-row: 3 / 4;
         grid-column: 2 / -2;
         margin-top: ${size(2.5)};
+        ${(props) => props.theme.breakpoint.Sm} {
+            grid-column: 4 / -4;
+        };
         ${(props) => props.theme.breakpoint.Md} {
             margin-top: ${size(3)};
-            grid-row: 3 / 4;
-            grid-column: 4 / -6;
+            grid-column: 4 / -5;
         };
     };
     

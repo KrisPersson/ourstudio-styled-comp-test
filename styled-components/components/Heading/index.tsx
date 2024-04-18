@@ -8,16 +8,10 @@ interface HeadingBaseProps {
 
 export const HeadingBase = styled.div<HeadingBaseProps>`
   display: block;
-  margin-top: 0;
+  margin: 0;
   font-weight: ${(props) => props.theme.font.weight.bold};
   font-family: ${(props) => props.theme.font.family.main};
-  line-height: ${(props) => props.theme.font.lineHeight.alt};
-
-  ${({ $noMargin }) =>
-    $noMargin &&
-    css`
-      margin-bottom: 0;
-    `}
+  line-height: 1.1;
 `;
 
 export const H1 = styled(HeadingBase).attrs<{ as: string }>((props) => ({
@@ -44,10 +38,10 @@ export const H2 = styled(HeadingBase).attrs<{ as: string }>((props) => ({
 export const H3 = styled(HeadingBase).attrs<{ as: string }>((props) => ({
   as: props.as || "h3",
 }))`
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   ${(props) => props.theme.breakpoint.Md} {
-    font-size: 4rem;
+    font-size: 1.75rem;
   }
 `;
 

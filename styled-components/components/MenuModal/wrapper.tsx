@@ -1,10 +1,10 @@
 import { size } from "../../layout/helpers";
 import { styled } from "styled-components";
 import { ButtonReset } from "../../layout/reset";
+import { MenuToggleButton } from "../MenuToggleButton/index";
 import Image from "next/image";
 
 export const Wrapper = styled.div`
-  font-family: ${(props) => props.theme.font.family.main};
   background-color: ${(props) => props.theme.colors.primaryDefault};
   position: fixed;
   left: 0;
@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   gap: ${size(2)};
+  z-index: 5;
 `;
 
 export const Inner = styled.div`
@@ -23,7 +24,10 @@ export const Inner = styled.div`
   ${(props) => props.theme.breakpoint.Md} {
     margin-top: ${(props) => props.theme.spacing.padding.page.top.desktop};
     height: calc(100vh - (${size(5)} * 2));
-    grid-template-rows: ${size(34)} 1fr auto;
+    grid-template-rows: ${size(18)} 1fr auto;
+    ${MenuToggleButton} {
+      top: ${(props) => props.theme.spacing.padding.page.top.desktop};
+    }
   }
 `;
 
