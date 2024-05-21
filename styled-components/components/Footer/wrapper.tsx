@@ -21,13 +21,14 @@ export const Content = styled.div`
 
 export const Headline = styled.h2`
   font-size: 2.5rem;
-  line-height: 140%;
+  line-height: 120%;
   font-weight: 400;
   color: ${(props) => props.theme.colors.primaryDefault};
 
   ${(props) => props.theme.breakpoint.Lg} {
     font-size: 4rem;
     max-width: 50%;
+    line-height: 112.5%;
   }
 `;
 

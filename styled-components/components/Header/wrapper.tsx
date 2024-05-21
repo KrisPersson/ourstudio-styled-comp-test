@@ -5,10 +5,10 @@ export const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: ${(props) => props.theme.spacing.padding.page.top.mobile};
+  padding-top: ${(props) => props.theme.padding.page.top.mobile};
 
   ${(props) => props.theme.breakpoint.Md} {
-    padding-top: ${(props) => props.theme.spacing.padding.page.top.desktop};
+    padding-top: ${(props) => props.theme.padding.page.top.desktop};
   }
 `;
 

@@ -4,6 +4,8 @@ import { size } from "../../layout/helpers";
 
 export const Wrapper = styled.div`
   overflow-x: auto;
+  margin-inline: var(--ignore-gutter);
+  padding-inline: var(--gutter);
 `;
 
 export const Inner = styled(Grid)`

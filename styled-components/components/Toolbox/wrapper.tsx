@@ -5,9 +5,12 @@ import { H3 } from "../Heading/index";
 import { size } from "../../layout/helpers";
 
 export const Wrapper = styled(Grid)`
-  row-gap: ${size(7)};
+  row-gap: ${size(4)};
   padding-left: 0;
   list-style: none;
+  ${(props) => props.theme.breakpoint.Md} {
+    row-gap: 0;
+  }
 `;
 
 export const Item = styled(Grid)`
@@ -34,9 +37,10 @@ export const ToolTitle = styled(H3)`
   grid-column: 3 / -2;
   font-weight: 400;
   max-width: fit-content;
-  line-height: unset;
+  line-height: ${size(4)};
   ${(props) => props.theme.breakpoint.Sm} {
     grid-column-start: 2;
+    line-height: ${size(5)};
   }
 `;
 
