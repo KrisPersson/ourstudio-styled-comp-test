@@ -6,7 +6,7 @@ import {
   ContentBottom,
   StyledImg,
   ImgWrapper,
-} from "../Card/wrapper";
+} from "../Card/index";
 
 export const Wrapper = styled(ImgWrapper)`
   min-height: ${size(36.25)};
