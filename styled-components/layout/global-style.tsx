@@ -44,11 +44,6 @@ export default createGlobalStyle<{ theme: Theme }>`
     border: 0;
   }
 
-  b,
-  strong {
-    font-weight: ${(props) => props.theme.font.weight.bold};
-  }
-
   h1,
   h2,
   h3,
