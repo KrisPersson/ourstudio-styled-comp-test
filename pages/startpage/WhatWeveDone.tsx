@@ -1,9 +1,5 @@
 import { Container } from "../../styled-components/components/Container/index";
 import SectionHeader from "../../styled-components/components/SectionHeader/index";
-import { Grid } from "../../styled-components/components/CssGrid/index";
-import WhatWeList from "../../styled-components/components/WhatWeList/index";
-import { styled } from "styled-components";
-import { size } from "../../styled-components/layout/helpers";
 import { H2 } from "../../styled-components/components/Heading/index";
 import ClientGallery from "../../styled-components/components/ClientGallery/index";
 import { StackLarge } from "../../styled-components/components/Stack/index";
