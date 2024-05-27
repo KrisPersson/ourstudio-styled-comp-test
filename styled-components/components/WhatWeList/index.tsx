@@ -16,7 +16,7 @@ export default function WhatWeList({ tagline }: IWhatWeListProps) {
         {list.map((item) => {
           return (
             <li key={item}>
-              <ListItemP $strikethru={tagline === "What we do"}>
+              <ListItemP strikethru={tagline === "What we do"}>
                 {item}
               </ListItemP>
             </li>

@@ -32,12 +32,12 @@ export const UL = styled.ul`
   }
 `;
 
-export const ListItemP = styled.p`
+export const ListItemP = styled.p<{ strikethru: boolean }>`
   font-weight: 700;
   font-size: ${size(3)};
   line-height: ${size(4)};
   margin: 0;
-  ${(props) => !props.$strikethru && strikeThru}
+  ${(props) => !props.strikethru && strikeThru}
 
   ${(props) => props.theme.breakpoint.Md} {
     font-size: ${size(4.5)};
