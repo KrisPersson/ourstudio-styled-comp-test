@@ -12,6 +12,9 @@ import {
   Address,
   BlackLogo,
 } from "./wrapper";
+type SetStateAction<S> = S | ((prevState: S) => S);
+
+type Dispatch<A> = (action: A) => void;
 
 export default function MenuModal({
   showHamburgerMenu,
