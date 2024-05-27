@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
+        <GlobalStyle theme={theme} />
         <Header />
         <Page>
           <Component {...pageProps} />
