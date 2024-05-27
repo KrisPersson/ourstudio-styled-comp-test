@@ -9,8 +9,14 @@ export const theme = {
   },
   colors: {
     primaryDark: "rgba(0, 0, 0, 1)",
-    primaryDefault: "rgba(24, 24, 24, 1)",
+    primaryDefault: "rgba(20, 20, 20, 1)",
     primaryLight: "rgba(255, 255, 255, 1)",
+    secondaryDefault: "rgba(254, 238, 190, 1)",
+  },
+  darkMode: {
+    primaryDark: "rgba(0, 0, 0, 1)",
+    primaryDefault: "rgba(255, 255, 255, 1)",
+    primaryLight: "rgba(20, 20, 20, 1)",
     secondaryDefault: "rgba(254, 238, 190, 1)",
   },
   font: {
@@ -18,44 +24,40 @@ export const theme = {
       main: "DM Sans, sans-serif",
     },
     weight: {
-      regular: "400",
-      medium: "500",
-      bold: "700",
+      regular: 400,
+    },
+    lineHeight: {
+      main: 1.43,
+      alt: 1.68,
+      tertiary: 1.2,
     },
     size: {
-      xsmall: "0.75rem",
-      small: "0.875rem",
-      regular: "1rem",
-      large: "1.125rem",
-      xlarge: "1.25rem",
-      xxlarge: "2rem",
-      xxxlarge: "2.125rem",
-      xxxxlarge: "5.125rem",
+      small: "1.0625rem",
+      regular: "1.1875rem",
+      large: "1.75rem",
     },
   },
   size: {
     baseUnit: "8px",
     containerMaxWidth: "1560px",
   },
-  spacing: {
-    gutter: {
-      container: {
-        inline: {
-          mobile: "32px",
-          desktop: "40px",
-        },
-        block: {
-          mobile: "28px",
-          desktop: "40px",
-        },
+  padding: {
+    page: {
+      top: {
+        mobile: "28px",
+        desktop: "40px",
       },
     },
-    padding: {
-      page: {
-        top: {
-          mobile: "28px",
-          desktop: "40px",
-        },
+  },
+  gutter: {
+    container: {
+      inline: {
+        mobile: "32px",
+        desktop: "40px",
+      },
+      block: {
+        mobile: "28px",
+        desktop: "40px",
       },
     },
   },

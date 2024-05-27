@@ -9,8 +9,6 @@ import WhatWeveDone from "./startpage/WhatWeveDone";
 import OurToolbox from "./startpage/OurToolbox";
 import WorkingWithStudents from "./startpage/WorkingWithStudents";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>

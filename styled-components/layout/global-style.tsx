@@ -14,7 +14,15 @@ export default createGlobalStyle<{ theme: Theme }>`
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     scroll-padding-top: ${size(6)};
+
+    --gutter: ${(props) => props.theme.gutter.container.inline.mobile};
+    ${(props) => props.theme.breakpoint.Md} {
+      --gutter: ${(props) => props.theme.gutter.container.inline.desktop}; 
+    };
+    --ignore-gutter: calc(var(--gutter) * -1);
   }
+
+  
 
   body {
     margin: 0;

@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 export const MenuToggleButton = styled.button`
   position: fixed;
-  left: ${(props) => props.theme.spacing.gutter.container.inline.desktop};
+  left: ${(props) => props.theme.gutter.container.inline.desktop};
   top: ${size(14.75)};
   background-color: ${(props) => props.theme.colors.secondaryDefault};
   display: none;

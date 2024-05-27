@@ -20,13 +20,13 @@ export const Inner = styled.div`
   display: grid;
   height: calc(100vh - (${size(4)} * 2));
   grid-template-rows: ${size(18)} 1fr auto;
-  margin-top: ${(props) => props.theme.spacing.padding.page.top.mobile};
+  margin-top: ${(props) => props.theme.padding.page.top.mobile};
   ${(props) => props.theme.breakpoint.Md} {
-    margin-top: ${(props) => props.theme.spacing.padding.page.top.desktop};
+    margin-top: ${(props) => props.theme.padding.page.top.desktop};
     height: calc(100vh - (${size(5)} * 2));
     grid-template-rows: ${size(18)} 1fr auto;
     ${MenuToggleButton} {
-      top: ${(props) => props.theme.spacing.padding.page.top.desktop};
+      top: ${(props) => props.theme.padding.page.top.desktop};
     }
   }
 `;

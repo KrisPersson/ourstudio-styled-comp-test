@@ -11,8 +11,12 @@ export const Inner = styled(Grid)`
   display: grid;
   row-gap: ${size(5)};
   column-gap: 0;
+  margin-inline: var(--ignore-gutter);
 
   ${(props) => props.theme.breakpoint.Sm} {
     column-gap: ${size(5)};
+  }
+  ${(props) => props.theme.breakpoint.Sm} {
+    margin-inline: unset;
   }
 `;
